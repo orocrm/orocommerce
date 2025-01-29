@@ -34,7 +34,7 @@ class ActualizeSearchTermReportCronCommandTest extends WebTestCase
         $this->assertEquals(0, $reportRepo->count([]));
         $this->assertEquals(9, $historyRepo->count([]));
 
-        $this->runCommand('oro:website-search:actualize-search-term-report');
+        $this->runCommand('oro:cron:website-search:actualize-search-term-report');
 
         $this->assertEquals(6, $reportRepo->count([]));
         $this->assertEquals(5, $historyRepo->count([]));

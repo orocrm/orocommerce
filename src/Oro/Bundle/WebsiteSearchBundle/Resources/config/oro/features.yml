@@ -7,7 +7,7 @@ features:
             - 'oro_website_search_result_history_index'
             - 'oro_website_search_term_preview'
         commands:
-            - 'oro:website-search:actualize-search-term-report'
+            - 'oro:cron:website-search:actualize-search-term-report'
         entities:
             - 'Oro\Bundle\WebsiteSearchBundle\SearchResult\Entity\SearchResultHistory'
             - 'Oro\Bundle\WebsiteSearchBundle\SearchResult\Entity\SearchTermReport'

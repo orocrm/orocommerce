@@ -14,7 +14,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class ActualizeSearchTermReportCronCommand extends Command implements CronCommandScheduleDefinitionInterface
 {
     /** @var string */
-    protected static $defaultName = 'oro:website-search:actualize-search-term-report';
+    protected static $defaultName = 'oro:cron:website-search:actualize-search-term-report';
 
     private SearchResultHistoryManagerInterface $manager;
 
