@@ -87,7 +87,7 @@ class CustomerUserListener
     {
         $request = $this->requestStack->getMainRequest();
 
-        return $request->request->get($name);
+        return $request ? $request->request->get($name) : null;
     }
 
     public function onCustomerUserEmailSend(CustomerUserEmailSendEvent $event)
